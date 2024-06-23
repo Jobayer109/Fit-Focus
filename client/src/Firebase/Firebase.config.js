@@ -11,10 +11,10 @@ const firebaseConfig = {
   projectId: "fitness-tracker-project-a1fbd",
   storageBucket: "fitness-tracker-project-a1fbd.appspot.com",
   messagingSenderId: "323510962573",
-  appId: "1:323510962573:web:4f3121f47e2a5251f3d5c4"
+  appId: "1:323510962573:web:4f3121f47e2a5251f3d5c4",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app)
-export default auth
+const auth = getAuth(app);
+export default auth;
