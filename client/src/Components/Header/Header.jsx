@@ -68,7 +68,7 @@ const Header = () => {
               ) : (
                 <Link to="/login">
                   <button
-                    className="align-middle  mr-auto select-none font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-sm py-3 px-6 rounded-lg bg-orange-500 border text-[#fff] hover:bg-orange-600 focus:ring focus:ring-gray-300 active:opacity-85"
+                    className="align-middle  mr-auto select-none font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-md bg-orange-500 border text-[#fff] hover:bg-orange-600 focus:ring focus:ring-gray-300 active:opacity-85"
                     type="button"
                   >
                     Sign In

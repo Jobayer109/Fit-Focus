@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div className="bg-gray-900">
       <Helmet>
-        <title>FitFocus | Home</title>
+        <title>FiTFocus | Home</title>
       </Helmet>
       <div className="container mx-auto max-w-screen-xl">
         <div className="relative font-Poppins">
@@ -77,7 +77,7 @@ const Home = () => {
                     </p>
                     <Link to="/trainers">
                       <button className="px-6 py-3 bg-orange-600 text-white font-semibold uppercase rounded-lg hover:opacity-85 focus:ring focus:ring-gray-300 inline-block">
-                        See Our Trainers →
+                        Meet Our Trainers →
                       </button>
                     </Link>
                   </div>
