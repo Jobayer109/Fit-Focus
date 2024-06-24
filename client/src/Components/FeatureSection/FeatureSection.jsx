@@ -21,6 +21,7 @@ const FeatureSection = () => {
         <h1 className="text-4xl font-Prata font-bold mt-24 text-orange-500">
           Services
         </h1>
+        <div className="h-2 w-56 mt-1 mb-5 bg-orange-300 mx-auto blur-lg"></div>
         <p className="mt-2 text-slate-400">
           Benefit from custom weight loss plans integrating exercise,
           <span className="block">
@@ -34,20 +35,17 @@ const FeatureSection = () => {
         {data?.map((feature) => (
           <div
             key={feature.id}
-            className="transform hover:scale-105 transition-transform duration-300 ease-in-out relative  "
+            className="transform hover:scale-105 transition-transform duration-300 ease-in-out relative"
           >
             <section
-              className=" shadow-lg h-[270px] mb-12 rounded-lg border border-gray-200 "
+              className=" shadow-lg h-[270px] mb-12 rounded-lg border border-gray-400 hover:border-orange-300"
               data-aos="flip-right"
             >
               <div className="text-center relative">
                 <div className="flex justify-center">
                   <img
                     src={feature.image}
-                    width={90}
-                    height={90}
-                    alt=""
-                    className="rounded-full border-4 border-orange-500 absolute -top-10"
+                    className="rounded-full h-20 w-20 border-2 p-1 bg-black border-orange-500 absolute -top-10"
                   />
                 </div>
 

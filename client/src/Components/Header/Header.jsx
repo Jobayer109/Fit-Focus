@@ -38,7 +38,7 @@ const Header = () => {
                   className="w- mr-1  h-15 h-9"
                   alt="logo"
                 />
-                <span className="self-center text-orange-500 whitespace-nowrap text-2xl font-bold dark:text-white">
+                <span className="self-center text-orange-500 whitespace-nowrap text-2xl font-extrabold dark:text-white">
                   FiTFOCUS
                 </span>
               </Navbar.Brand>
@@ -68,7 +68,7 @@ const Header = () => {
               ) : (
                 <Link to="/login">
                   <button
-                    className="align-middle  mr-auto select-none font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-md bg-orange-500 border text-[#fff] hover:bg-orange-600 focus:ring focus:ring-gray-300 active:opacity-85"
+                    className="align-middle  mr-auto select-none font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-md bg-orange-500 border text-[#fff] hover:bg-orange-600 focus:ring focus:ring-gray-300 active:opacity-85 tracking-wide"
                     type="button"
                   >
                     Sign In
@@ -79,35 +79,23 @@ const Header = () => {
             </div>
 
             <Navbar.Collapse>
-              <div className="flex flex-col md:flex-row items-center justify-center gap-4 font-semibold">
-                <NavLink to="/" className="text-base" activeClassName="active">
+              <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-base font-semibold tracking-wide">
+                <NavLink to="/" className="text-md" activeClassName="active">
                   <div className="">
                     <span>Home</span>
                   </div>
                 </NavLink>
-                <NavLink
-                  to="/trainers"
-                  className="text-base"
-                  activeClassName="active"
-                >
+                <NavLink to="/trainers" activeClassName="active">
                   <div>
                     <span>Trainers</span>
                   </div>
                 </NavLink>
-                <NavLink
-                  to="/allclass"
-                  className=" text-base"
-                  activeClassName="active"
-                >
+                <NavLink to="/allclass" activeClassName="active">
                   <div>
                     <span>Courses</span>
                   </div>
                 </NavLink>
-                <NavLink
-                  to="/community"
-                  className="text-base"
-                  activeClassName="active"
-                >
+                <NavLink to="/community" activeClassName="active">
                   <div>
                     <span>Community</span>
                   </div>
@@ -116,11 +104,7 @@ const Header = () => {
                   (userData?.role === "trainer" ||
                     userData?.role === "admin") && (
                     <>
-                      <NavLink
-                        to="/deshboard"
-                        className=" text-base"
-                        activeClassName="active"
-                      >
+                      <NavLink to="/deshboard" activeClassName="active">
                         <div>
                           <span>Dashboard</span>
                         </div>
@@ -128,11 +112,7 @@ const Header = () => {
                     </>
                   )}
                 {user && (
-                  <NavLink
-                    to="/profile"
-                    className="text-base"
-                    activeClassName="active"
-                  >
+                  <NavLink to="/profile" activeClassName="active">
                     <div>
                       <span>Profile</span>
                     </div>

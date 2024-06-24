@@ -49,7 +49,7 @@ const Home = () => {
                       Fitness
                     </p>
                     <Link to="/trainers">
-                      <button className="px-6 py-3 bg-orange-600 text-white font-semibold uppercase rounded-lg hover:opacity-85 focus:ring focus:ring-gray-300 inline-block">
+                      <button className="px-6 py-3 bg-orange-600 text-white font-semibold uppercase rounded-lg hover:opacity-85 focus:ring focus:ring-gray-300 inline-block tracking-wider">
                         Meet Our Trainers &rarr;
                       </button>
                     </Link>
@@ -76,8 +76,8 @@ const Home = () => {
                       Fitness
                     </p>
                     <Link to="/trainers">
-                      <button className="px-6 py-3 bg-orange-600 text-white font-semibold uppercase rounded-lg hover:opacity-85 focus:ring focus:ring-gray-300 inline-block">
-                        Meet Our Trainers →
+                      <button className="px-6 py-3 bg-orange-600 text-white font-semibold uppercase rounded-lg hover:opacity-85 focus:ring focus:ring-gray-300 inline-block tracking-wider">
+                        Meet Our Trainers &rarr;
                       </button>
                     </Link>
                   </div>
