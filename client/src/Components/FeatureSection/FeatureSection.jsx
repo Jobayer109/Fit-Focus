@@ -30,13 +30,19 @@ const FeatureSection = () => {
         {data?.map((feature) => (
           <div
             key={feature.id}
-            className="scale-90 hover:scale-95 transition-transform duration-300 ease-in-out"
+            className="scale-90 hover:scale-95 transition-transform duration-300 ease-in-out relative"
           >
-            <section className="p-6 shadow-lg mb-5 h-[380px] bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100">
-              <div className="container mx-auto text-center lg:grid-cols-3 flex justify-center items-center">
+            <section className="p-6 shadow-lg mb-5 h-[380px] bg-orange-500 dark:bg-gray-800 text-gray-800 dark:text-gray-100 rounded-md">
+              <div className="container mx-auto text-center lg:grid-cols-3 flex justify-center items-center ">
                 <div className="flex flex-col justify-start m-2 lg:m-6">
-                  <p className="items-center flex justify-center">
-                    <img src={feature.image} width={100} height={100} alt="" />
+                  <p className="items-center flex justify-center bg-orange-500">
+                    <img
+                      src={feature.image}
+                      width={90}
+                      height={90}
+                      alt=""
+                      className="rounded-full border-2 border-orange-500 absolute -top-10"
+                    />
                   </p>
                   <p className="text-3xl font-Oswald font-bold mt-4">
                     {feature.name}
