@@ -10,7 +10,7 @@ const Header = () => {
 
   const navigate = useNavigate();
   const [userData, setUserData] = useState(null);
-  const { data, isLoading, error, refetch } = useUserByEmail();
+  const { data } = useUserByEmail();
 
   useEffect(() => {
     if (data) {
@@ -27,20 +27,22 @@ const Header = () => {
   };
 
   return (
-    <div className="">
-      <div className="shadow-2xl w-full font-Roboto  mx-auto">
+    <div>
+      <div className="shadow-xl w-full mx-auto md:px-6 lg:px-6 xl:px-6">
         <div className="m-0 p-0 shadow-2xl z-10">
           <Navbar fluid rounded>
-            <Navbar.Brand href="#">
-              <img
-                src="https://i.ibb.co/zXvSWPK/logo-removebg-preview.png"
-                className="w-15 mr-5 lg:ml-10 h-15 sm:h-9"
-                alt="PlateswapLogo"
-              />
-              <span className="self-center uppercase whitespace-nowrap text-2xl font-semibold dark:text-white italic">
-                FitFocus
-              </span>
-            </Navbar.Brand>
+            <Link to="/">
+              <Navbar.Brand>
+                <img
+                  src="https://i.ibb.co/L8XczTq/logo.png"
+                  className="w- mr-1  h-15 h-9"
+                  alt="logo"
+                />
+                <span className="self-center text-orange-500 whitespace-nowrap text-2xl font-bold dark:text-white">
+                  FiTFOCUS
+                </span>
+              </Navbar.Brand>
+            </Link>
             <div className="flex md:order-2">
               {user ? (
                 <Dropdown
@@ -66,7 +68,7 @@ const Header = () => {
               ) : (
                 <Link to="/login">
                   <button
-                    className="align-middle mr-auto select-none font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-orange-600 border text-[#fff] hover:bg-orange-700 focus:ring focus:ring-gray-300 active:opacity-85"
+                    className="align-middle  mr-auto select-none font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-sm py-3 px-6 rounded-lg bg-orange-500 border text-[#fff] hover:bg-orange-600 focus:ring focus:ring-gray-300 active:opacity-85"
                     type="button"
                   >
                     Sign In
@@ -77,73 +79,66 @@ const Header = () => {
             </div>
 
             <Navbar.Collapse>
-              <NavLink
-                to="/"
-                className="font-normal text-base"
-                activeClassName="active"
-              >
-                <div className="flex items-center justify-center">
-                  <span>Home</span>
-                </div>
-              </NavLink>
-
-              <NavLink
-                to="/trainers"
-                className="font-normal text-base"
-                activeClassName="active"
-              >
-                <div className="flex items-center gap-1 justify-center">
-                  <span>All Trainer Page</span>
-                </div>
-              </NavLink>
-
-              <NavLink
-                to="/allclass"
-                className="font-normal text-base"
-                activeClassName="active"
-              >
-                <div className="flex items-center gap-1 justify-center">
-                  <span>All Classes Page</span>
-                </div>
-              </NavLink>
-
-              <NavLink
-                to="/community"
-                className="font-normal text-base"
-                activeClassName="active"
-              >
-                <div className="flex items-center gap-1 justify-center">
-                  <span>Community</span>
-                </div>
-              </NavLink>
-
-              {user &&
-                (userData?.role === "trainer" ||
-                  userData?.role === "admin") && (
-                  <>
-                    <NavLink
-                      to="/deshboard"
-                      className="font-normal text-base"
-                      activeClassName="active"
-                    >
-                      <div className="flex items-center gap-1 justify-center">
-                        <span>Dashboard</span>
-                      </div>
-                    </NavLink>
-                  </>
-                )}
-
-              {user && (
-                <NavLink
-                  to="/profile"
-                  className="font-normal text-base"
-                  activeClassName="active"
-                >
-                  <div className="flex items-center gap-1 justify-center">
-                    <span>Profile</span>
+              <div className="flex flex-col md:flex-row items-center justify-center gap-4 font-semibold">
+                <NavLink to="/" className="text-base" activeClassName="active">
+                  <div className="">
+                    <span>Home</span>
                   </div>
                 </NavLink>
-              )}
+                <NavLink
+                  to="/trainers"
+                  className="text-base"
+                  activeClassName="active"
+                >
+                  <div>
+                    <span>Trainers</span>
+                  </div>
+                </NavLink>
+                <NavLink
+                  to="/allclass"
+                  className=" text-base"
+                  activeClassName="active"
+                >
+                  <div>
+                    <span>Courses</span>
+                  </div>
+                </NavLink>
+                <NavLink
+                  to="/community"
+                  className="text-base"
+                  activeClassName="active"
+                >
+                  <div>
+                    <span>Community</span>
+                  </div>
+                </NavLink>
+                {user &&
+                  (userData?.role === "trainer" ||
+                    userData?.role === "admin") && (
+                    <>
+                      <NavLink
+                        to="/deshboard"
+                        className=" text-base"
+                        activeClassName="active"
+                      >
+                        <div>
+                          <span>Dashboard</span>
+                        </div>
+                      </NavLink>
+                    </>
+                  )}
+                {user && (
+                  <NavLink
+                    to="/profile"
+                    className="text-base"
+                    activeClassName="active"
+                  >
+                    <div>
+                      <span>Profile</span>
+                    </div>
+                  </NavLink>
+                )}
+              </div>
             </Navbar.Collapse>
           </Navbar>
         </div>

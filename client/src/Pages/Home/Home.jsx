@@ -7,20 +7,19 @@ import NewsletterSection from "../../Components/NewsletterSection/NewsletterSect
 import ReviewSection from "../../Components/ReviewSection/ReviewSection";
 import TrainerSection from "../../Components/TrainerSection/TrainerSection";
 
-
 const Home = () => {
-    return (
-        <div>
-            <Banner></Banner>
-            <FeatureSection/>
-            <AboutSection/>
-            <FeaturedClasses/>
-            <ReviewSection/>
-            <LatestCommunity/>
-            <NewsletterSection/>
-            <TrainerSection/>
-        </div>
-    );
+  return (
+    <div className="w-full">
+      <Banner></Banner>
+      <FeatureSection />
+      <AboutSection />
+      <FeaturedClasses />
+      <ReviewSection />
+      <LatestCommunity />
+      <NewsletterSection />
+      <TrainerSection />
+    </div>
+  );
 };
 
 export default Home;

@@ -42,7 +42,7 @@ const Home = () => {
                   <div className="text-white text-center">
                     <h1 className="text-4xl lg:text-6xl font-bold mb-4 text-gray-200">
                       Shape Your Future with{" "}
-                      <span className="text-orange-600">FitFocus</span>
+                      <span className="text-orange-500">FiTFOCUS</span>
                     </h1>
                     <p className="text-lg lg:text-xl md:text-md sm:text-sm mb-6  text-gray-300">
                       Your Ultimate Destination for Health, Wellness, and
@@ -69,7 +69,7 @@ const Home = () => {
                   <div className="text-white text-center">
                     <h1 className="text-4xl lg:text-6xl font-bold mb-4 text-gray-200">
                       Shape Your Future with{" "}
-                      <span className="text-orange-600">FitFocus</span>
+                      <span className="text-orange-500">FiTFOCUS</span>
                     </h1>
                     <p className="text-lg lg:text-xl mb-6 text-gray-300">
                       Your Ultimate Destination for Health, Wellness, and
