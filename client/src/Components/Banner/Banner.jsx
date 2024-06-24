@@ -50,7 +50,7 @@ const Home = () => {
                     </p>
                     <Link to="/trainers">
                       <button className="px-6 py-3 bg-orange-600 text-white font-semibold uppercase rounded-lg hover:opacity-85 focus:ring focus:ring-gray-300 inline-block">
-                        See Our Trainers →
+                        Meet Our Trainers &rarr;
                       </button>
                     </Link>
                   </div>
