@@ -9,8 +9,8 @@ import TrainerSection from "../../Components/TrainerSection/TrainerSection";
 
 const Home = () => {
   return (
-    <div className="w-full">
-      <Banner></Banner>
+    <div>
+      <Banner />
       <FeatureSection />
       <AboutSection />
       <FeaturedClasses />
