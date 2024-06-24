@@ -10,7 +10,7 @@ import "../../Styles/SwiperSlide.css";
 
 const Home = () => {
   return (
-    <div className="bg-gray-900">
+    <div>
       <Helmet>
         <title>FiTFocus | Home</title>
       </Helmet>

@@ -16,45 +16,50 @@ const FeatureSection = () => {
   }
 
   return (
-    <>
-      <div className="text-center px-8">
-        <h1 className="text-4xl font-Prata font-bold mt-24">Services</h1>
-        <p className="mt-2 mb-10 text-slate-500">
-          Benefit from custom weight loss plans integrating exercise, diet, and
-          ongoing support, guiding you <br /> towards safe and sustainable
-          weight management.
+    <section className="px-10">
+      <div className="text-center ">
+        <h1 className="text-4xl font-Prata font-bold mt-24 text-gray-200">
+          Services
+        </h1>
+        <p className="mt-2 text-gray-400">
+          Benefit from custom weight loss plans integrating exercise,
+          <span className="block">
+            diet, and ongoing support, guiding you towards safe and sustainable
+            weight management.
+          </span>
         </p>
       </div>
 
-      <div className="lg:grid gap-5 grid-cols-3 container mx-auto">
+      <div className="lg:grid gap-12 grid-cols-3 mx-auto mt-24 px-4 lg:px-0">
         {data?.map((feature) => (
           <div
             key={feature.id}
-            className="scale-90 hover:scale-95 transition-transform duration-300 ease-in-out relative"
+            className="transform hover:scale-105 transition-transform duration-300 ease-in-out relative"
           >
-            <section className="p-6 shadow-lg mb-5 h-[380px] bg-orange-500 dark:bg-gray-800 text-gray-800 dark:text-gray-100 rounded-md">
-              <div className="container mx-auto text-center lg:grid-cols-3 flex justify-center items-center ">
-                <div className="flex flex-col justify-start m-2 lg:m-6">
-                  <p className="items-center flex justify-center bg-orange-500">
-                    <img
-                      src={feature.image}
-                      width={90}
-                      height={90}
-                      alt=""
-                      className="rounded-full border-2 border-orange-500 absolute -top-10"
-                    />
+            <section className="p-8 shadow-lg mb-5 h-[280px] bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded-lg border border-gray-200 dark:border-gray-700">
+              <div className="text-center relative">
+                <div className="flex justify-center">
+                  <img
+                    src={feature.image}
+                    width={90}
+                    height={90}
+                    alt=""
+                    className="rounded-full border-4 border-orange-500 absolute -top-16"
+                  />
+                </div>
+
+                <div className="flex justify-center flex-col mt-12">
+                  <p className="text-2xl font-semibold mb-2">{feature.name}</p>
+                  <p className="text-gray-800 leading-tight dark:text-gray-300 mt-2">
+                    {feature.description}
                   </p>
-                  <p className="text-3xl font-Oswald font-bold mt-4">
-                    {feature.name}
-                  </p>
-                  <p className="mt-3">{feature.description}</p>
                 </div>
               </div>
             </section>
           </div>
         ))}
       </div>
-    </>
+    </section>
   );
 };
 

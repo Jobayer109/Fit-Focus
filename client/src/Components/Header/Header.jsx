@@ -27,7 +27,7 @@ const Header = () => {
   };
 
   return (
-    <div>
+    <div className="bg-white">
       <div className="shadow-xl w-full mx-auto md:px-6 lg:px-6 xl:px-6">
         <div className="m-0 p-0 shadow-2xl z-10">
           <Navbar fluid rounded>
