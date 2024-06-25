@@ -31,7 +31,7 @@ const FeatureSection = () => {
         </p>
       </div>
 
-      <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3 mx-auto mt-24 lg:px-0 ">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 mx-auto mt-24 lg:px-0 ">
         {data?.map((feature) => (
           <div
             key={feature.id}
@@ -39,7 +39,7 @@ const FeatureSection = () => {
           >
             <section
               className=" shadow-lg h-[270px] mb-12 rounded-lg border border-gray-400 hover:border-orange-300"
-              data-aos="flip-right"
+              data-aos="zoom-out"
             >
               <div className="text-center relative">
                 <div className="flex justify-center">
