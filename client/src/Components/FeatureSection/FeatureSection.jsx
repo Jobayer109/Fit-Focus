@@ -18,7 +18,7 @@ const FeatureSection = () => {
   return (
     <section className="px-10 font-Prata">
       <div className="text-center ">
-        <h1 className="text-4xl font-Prata font-bold mt-24 text-orange-500">
+        <h1 className="text-4xl font-Prata font-bold mt-36 text-orange-500">
           Services
         </h1>
         <div className="h-2 w-56 mt-1 mb-5 bg-orange-300 mx-auto blur-lg"></div>
