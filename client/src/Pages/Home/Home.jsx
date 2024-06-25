@@ -11,13 +11,13 @@ const Home = () => {
   return (
     <div>
       <Banner />
-      <FeatureSection />
       <AboutSection />
+      <FeatureSection />
       <FeaturedClasses />
-      <ReviewSection />
-      <LatestCommunity />
-      <NewsletterSection />
       <TrainerSection />
+      <LatestCommunity />
+      <ReviewSection />
+      <NewsletterSection />
     </div>
   );
 };
