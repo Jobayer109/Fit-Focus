@@ -10,8 +10,7 @@ import Loading from "../../Shared/Loading";
 const Root = () => {
   useEffect(() => {
     AOS.init({
-      duration: 600,
-      easing: "ease-in-out",
+      duration: 300,
     });
   }, []);
 
