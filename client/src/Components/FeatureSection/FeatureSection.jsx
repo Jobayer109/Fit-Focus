@@ -31,7 +31,7 @@ const FeatureSection = () => {
         </p>
       </div>
 
-      <div className="lg:grid gap-12 grid-cols-3 mx-auto mt-24 lg:px-0 ">
+      <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3 mx-auto mt-24 lg:px-0 ">
         {data?.map((feature) => (
           <div
             key={feature.id}
@@ -45,7 +45,7 @@ const FeatureSection = () => {
                 <div className="flex justify-center">
                   <img
                     src={feature.image}
-                    className="rounded-full h-20 w-20 border-2 p-1 bg-black border-orange-500 absolute -top-10"
+                    className="rounded-full h-20 w-20 border-2 p-1 bg-black border-orange-500 absolute -top-10 "
                   />
                 </div>
 
