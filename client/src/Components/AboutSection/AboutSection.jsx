@@ -72,7 +72,7 @@ const AboutSection = () => {
             </div> */}
 
             <div className="flex flex-wrap justify-between w-full mb-7">
-              <div className="flex flex-col items-start mb-5 md:mb-0 md:w-1/3">
+              <div className="flex flex-col lg:items-start md:items-center mb-5 md:mb-0 md:w-1/3">
                 <span className="text-2xl font-semibold">
                   <CountUp
                     start={80}
@@ -84,7 +84,7 @@ const AboutSection = () => {
                 </span>
                 <span className="text-gray-500">Premium Products</span>
               </div>
-              <div className="flex flex-col items-start mb-5 md:mb-0 md:w-1/3">
+              <div className="flex flex-col lg:items-start md:items-center mb-5 md:mb-0 md:w-1/3">
                 <span className="text-2xl font-semibold">
                   <CountUp
                     start={800}
@@ -96,7 +96,7 @@ const AboutSection = () => {
                 </span>
                 <span className="text-gray-500">Happy Clients</span>
               </div>
-              <div className="flex flex-col items-start mb-5 md:mb-0 md:w-1/3">
+              <div className="flex flex-col lg:items-start md:items-center mb-5 md:mb-0 md:w-1/3">
                 <span className="text-2xl font-semibold">
                   <CountUp
                     end={12}
