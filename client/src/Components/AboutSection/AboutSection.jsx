@@ -1,3 +1,6 @@
+import CountUp from "react-countup";
+import "./About.css";
+
 const AboutSection = () => {
   return (
     <div className="mt-36">
@@ -22,7 +25,7 @@ const AboutSection = () => {
             <h1 className="text-4xl text-gray-300 font-bold leading-none">
               A Fitness Tracker Website
             </h1>
-            <p className="my-10 text-gray-500 text-md leading-tight">
+            <p className="my-7 text-gray-500 text-md leading-tight">
               Welcome to FitFocus – your ultimate fitness companion! At
               FitFocus, we are dedicated to helping you achieve your fitness
               goals and lead a healthier lifestyle. Our platform provides
@@ -30,6 +33,7 @@ const AboutSection = () => {
               the way. Join our community today and discover the power of
               focused fitness for a happier, healthier you.
             </p>
+
             <div className="md:text-center xl:text-start">
               <button className="px-6 py-3 lg:w-1/3 md:w-1/3 w-full  bg-orange-600 text-gray-200 text-sm font-semibold uppercase rounded-lg hover:opacity-85 focus:ring focus:ring-gray-300">
                 Learn More

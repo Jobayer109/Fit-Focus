@@ -12,14 +12,21 @@ const TrainerSection = () => {
   }
 
   return (
-    <div className="mb-20">
+    <div className="mt-44">
       <div>
         <div className="text-center">
-          <h1 className="text-4xl font-Prata font-bold mt-24">Trainer</h1>
-          <p className="mt-2 mb-10 text-slate-500 ">
-            Benefit from custom weight loss plans integrating exercise, diet,
-            and ongoing support, guiding you <br /> towards safe and sustainable
-            weight management.
+          <div className="text-center ">
+            <h1 className="text-4xl font-Prata font-bold text-orange-500">
+              Our Trainers
+            </h1>
+            <div className="h-2 w-56 mt-1  bg-orange-300 mx-auto blur-lg"></div>
+          </div>
+          <p className="mt-2 text-slate-400">
+            Benefit from custom weight loss plans integrating exercise,
+            <span className="block">
+              diet, and ongoing support, guiding you towards safe and
+              sustainable weight management.
+            </span>
           </p>
         </div>
         <div className="lg:grid gap-3 grid-cols-3 container mx-auto ">
