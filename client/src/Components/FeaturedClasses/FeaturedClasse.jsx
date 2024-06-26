@@ -10,10 +10,7 @@ const FeaturedClasse = ({ classData }) => {
   };
 
   return (
-    <div
-      className="flex flex-col md:flex-row justify-between h-auto md:h-60 lg:h-48 gap-6 mt-5 md:mt-6 lg:mt-0 xl:mt-0 items-center rounded-md shadow-md bg-slate-900 border border-orange-400"
-      data-aos="zoom-in-right"
-    >
+    <div className="flex flex-col md:flex-row justify-between h-auto md:h-60 lg:h-48 gap-6 mt-5 md:mt-6 lg:mt-0 xl:mt-0 items-center rounded-md shadow-md bg-slate-900 border border-orange-400">
       <img
         src={classData.image}
         alt={classData.className}

@@ -1,5 +1,4 @@
 import CountUp from "react-countup";
-import "./About.css";
 
 const AboutSection = () => {
   return (
