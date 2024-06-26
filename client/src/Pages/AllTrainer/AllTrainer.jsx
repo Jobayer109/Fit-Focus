@@ -6,7 +6,7 @@ const AllTrainer = () => {
 
   return (
     <div>
-      <div className="lg:grid grid-cols-3 container mx-auto">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 container ">
         {data?.map((trainer) => (
           <Trainer key={trainer._id} trainer={trainer}></Trainer>
         ))}

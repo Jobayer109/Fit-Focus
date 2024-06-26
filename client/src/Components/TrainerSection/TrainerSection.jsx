@@ -37,7 +37,7 @@ const TrainerSection = () => {
       </div>
       <div className="float-end w-60 mt-3 container mx-auto ">
         <Link to={`/trainers`}>
-          <button className="mx-auto border border-[#084711] w-44 btn px-5  hover:bg-[#605985] text-[#1E1743] font-Montserrat text-base">
+          <button className="px-6 py-3 bg-orange-600 text-gray-300 font-semibold uppercase rounded-lg hover:opacity-85 focus:ring focus:ring-gray-300 inline-block tracking-wider">
             See More <FaArrowRight />
           </button>
         </Link>
