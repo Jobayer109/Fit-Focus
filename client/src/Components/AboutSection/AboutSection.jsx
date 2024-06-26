@@ -34,6 +34,44 @@ const AboutSection = () => {
               focused fitness for a happier, healthier you.
             </p>
 
+            <div className="flex justify-between w-full mb-7">
+              <div className="flex flex-col items-start">
+                <span className="text-2xl font-semibold">
+                  <CountUp
+                    start={8800}
+                    end={9000}
+                    duration={5}
+                    className="text-gray-300 font-extrabold mr-1"
+                  />
+                  <span className="text-orange-500">+</span>
+                </span>
+                <span className="text-gray-500">Premium Products</span>
+              </div>
+              <div className="flex flex-col items-start">
+                <span className="text-2xl font-semibold">
+                  <CountUp
+                    start={1800}
+                    end={2000}
+                    duration={5}
+                    className="text-gray-300 font-extrabold mr-1"
+                  />
+                  <span className="text-orange-500">+</span>
+                </span>
+                <span className="text-gray-500">Happy Clients</span>
+              </div>
+              <div className="flex flex-col items-start">
+                <span className="text-2xl font-semibold">
+                  <CountUp
+                    end={43}
+                    duration={5}
+                    className="text-gray-300 font-extrabold mr-1"
+                  />
+                  <span className="text-orange-500">+</span>
+                </span>
+                <span className="text-gray-500">Awards Winning</span>
+              </div>
+            </div>
+
             <div className="md:text-center xl:text-start">
               <button className="px-6 py-3 lg:w-1/3 md:w-1/3 w-full  bg-orange-600 text-gray-200 text-sm font-semibold uppercase rounded-lg hover:opacity-85 focus:ring focus:ring-gray-300">
                 Learn More
