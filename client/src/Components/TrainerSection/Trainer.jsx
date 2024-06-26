@@ -7,16 +7,16 @@ import { Link } from "react-router-dom";
 const Trainer = ({ trainer }) => {
   return (
     <section className="flex justify-center items-center p-10 ">
-      <div className="bg-gray-900 border-2 border-gray-500 rounded-lg shadow-lg overflow-hidden w-full max-w-sm transform hover:scale-105 duration-200 ease-in">
+      <div className="bg-black border border-gray-500 rounded-lg shadow-lg overflow-hidden w-full max-w-sm transform hover:scale-105 duration-200 ease-in">
         <div
-          className="p-8 bg-cover bg-center relative"
+          className="p-4 bg-cover bg-center relative"
           style={{ backgroundImage: `url(${trainer.photoURL})` }}
         >
           <img
             src={trainer.photoURL}
             alt={trainer.name}
             loading="lazy"
-            className="absolute left-1/2 transform -translate-x-1/2 -top-0 rounded-full h-32 w-32 border-2 border-gray-500 object-cover"
+            className="absolute left-1/2 transform -translate-x-1/2 top-2 rounded-full h-24 w-24 border-2 border-gray-300 object-cover"
           />
         </div>
         <div className="p-6 text-center">

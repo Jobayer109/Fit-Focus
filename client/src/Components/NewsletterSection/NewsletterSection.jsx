@@ -34,7 +34,7 @@ const NewsletterSection = () => {
   };
 
   return (
-    <div className="my-36 container mx-auto rounded-xl bg-gradient-to-l from-black to-orange-600 p-10 shadow-lg">
+    <div className="my-36 container mx-auto rounded-xl bg-gradient-to-b from-black to-orange-500 p-10 shadow-lg">
       <div className="lg:grid grid-cols-2 gap-8">
         <div className="text-center p-10">
           <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-white shadow-md pb-1">
