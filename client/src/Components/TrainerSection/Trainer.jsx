@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Trainer = ({ trainer }) => {
   return (
     <section className="flex justify-center items-center p-10 ">
-      <div className="bg-white border border-gray-300 rounded-lg shadow-lg overflow-hidden w-full max-w-sm transform hover:scale-105 duration-200 ease-in">
+      <div className="bg-gray-300 border border-gray-300 rounded-lg shadow-lg overflow-hidden w-full max-w-sm transform hover:scale-105 duration-200 ease-in">
         <div
           className="p-4 bg-cover bg-center relative"
           style={{ backgroundImage: `url(${trainer.photoURL})` }}
