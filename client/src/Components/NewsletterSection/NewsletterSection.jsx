@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
-import { axiosSecure } from "../../Hook/useAxiosSecure";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { axiosSecure } from "../../Hook/useAxiosSecure";
 
 const NewsletterSection = () => {
   const {
@@ -37,9 +37,9 @@ const NewsletterSection = () => {
     <div className="my-36 container mx-auto rounded-xl bg-gradient-to-l from-black to-orange-600 p-10 shadow-lg">
       <div className="lg:grid grid-cols-2 gap-8">
         <div className="text-center p-10">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white font-Prata">
+          <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-white shadow-md pb-1">
             Subscribe to Our Newsletter
-          </h1>
+          </p>
           <p className="text-gray-300 mt-4 text-sm md:text-base lg:text-lg">
             Don't Miss Out! Subscribe to Our Newsletter for the Latest Updates,
             Exclusive Offers, and Insider Tips. Join Our Community Today and
@@ -52,7 +52,7 @@ const NewsletterSection = () => {
               <input
                 type="text"
                 placeholder="Name"
-                className="input input-bordered font-bold w-full"
+                className="input input-bordered font-bold w-full text-gray-400"
                 {...register("name", { required: true })}
               />
               {errors.name && (
@@ -64,7 +64,7 @@ const NewsletterSection = () => {
               <input
                 type="email"
                 placeholder="Email"
-                className="input input-bordered font-bold w-full"
+                className="input input-bordered font-bold w-full text-gray-400"
                 {...register("user_email", { required: true })}
               />
               {errors.user_email && (
@@ -72,10 +72,10 @@ const NewsletterSection = () => {
               )}
             </div>
             <button
-              className="btn text-white bg-[#1E1743] hover:bg-[#120c2f] mt-5 w-full md:w-auto"
+              className="btn text-white hover:text-orange-500 bg-black hover:bg-slate-900 border-2 hover:border-orange-600 mt-5 w-full md:w-auto tracking-wider"
               type="submit"
             >
-              Subscribe
+              Subscribe Now
             </button>
           </form>
         </div>
