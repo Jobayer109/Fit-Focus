@@ -35,9 +35,9 @@ const TrainerSection = () => {
           ))}
         </div>
       </div>
-      <div className="float-end w-60 mt-3 container mx-auto ">
+      <div className="float-end  w-64 mt-3 container mx-auto ">
         <Link to={`/trainers`}>
-          <button className="px-6 py-3 bg-orange-600 text-gray-300 font-semibold uppercase rounded-lg hover:opacity-85 focus:ring focus:ring-gray-300 inline-block tracking-wider">
+          <button className=" flex items-center  justify-center gap-2 px-4 py-2 bg-orange-600 border border-orange-500 text-sm text-gray-300 font-semibold uppercase rounded-lg hover:opacity-85 focus:ring focus:ring-gray-300 tracking-wider">
             See More <FaArrowRight />
           </button>
         </Link>

@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 
 const Trainer = ({ trainer }) => {
   return (
-    <section className="flex justify-center items-center p-10 transform hover:scale-105 transition-transform duration-300 ease-in-out">
-      <div className="bg-white border border-gray-300 rounded-lg shadow-lg overflow-hidden w-full max-w-sm">
+    <section className="flex justify-center items-center p-10 ">
+      <div className="bg-white border border-gray-300 rounded-lg shadow-lg overflow-hidden w-full max-w-sm transform hover:scale-105 duration-200 ease-in">
         <div
           className="p-4 bg-cover bg-center relative"
           style={{ backgroundImage: `url(${trainer.photoURL})` }}
@@ -23,7 +23,6 @@ const Trainer = ({ trainer }) => {
           <h2 className="text-2xl font-semibold text-gray-800 mt-20">
             {trainer.name}
           </h2>
-          {/* <p className="text-gray-600">{trainer.age} years old</p> */}
           <h2 className="mt-2 inline-block bg-green-500 text-white text-sm font-bold px-2 rounded-md">
             Available
           </h2>
@@ -44,7 +43,7 @@ const Trainer = ({ trainer }) => {
           </div>
           <div className="mt-6">
             <Link to={`/trainers/${trainer._id}`}>
-              <button className="px-4 py-2 bg-orange-500 text-white font-semibold uppercase rounded-md hover:opacity-85 focus:ring focus:ring-orange-300">
+              <button className="px-4 py-2 bg-orange-500 text-white text-sm font-semibold uppercase rounded-md hover:opacity-85 focus:ring focus:ring-orange-300">
                 Book Now
               </button>
             </Link>
