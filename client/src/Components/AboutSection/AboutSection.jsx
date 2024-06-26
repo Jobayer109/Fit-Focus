@@ -33,12 +33,12 @@ const AboutSection = () => {
               focused fitness for a happier, healthier you.
             </p>
 
-            <div className="flex justify-between w-full mb-7">
+            {/* <div className="flex justify-between w-full mb-7">
               <div className="flex flex-col items-start">
                 <span className="text-2xl font-semibold">
                   <CountUp
-                    start={8800}
-                    end={9000}
+                    start={180}
+                    end={230}
                     duration={5}
                     className="text-gray-300 font-extrabold mr-1"
                   />
@@ -49,8 +49,8 @@ const AboutSection = () => {
               <div className="flex flex-col items-start">
                 <span className="text-2xl font-semibold">
                   <CountUp
-                    start={1800}
-                    end={2000}
+                    start={800}
+                    end={1000}
                     duration={5}
                     className="text-gray-300 font-extrabold mr-1"
                   />
@@ -61,13 +61,51 @@ const AboutSection = () => {
               <div className="flex flex-col items-start">
                 <span className="text-2xl font-semibold">
                   <CountUp
-                    end={43}
+                    end={6}
                     duration={5}
                     className="text-gray-300 font-extrabold mr-1"
                   />
                   <span className="text-orange-500">+</span>
                 </span>
                 <span className="text-gray-500">Awards Winning</span>
+              </div>
+            </div> */}
+
+            <div className="flex flex-wrap justify-between w-full mb-7">
+              <div className="flex flex-col items-start mb-5 md:mb-0 md:w-1/3">
+                <span className="text-2xl font-semibold">
+                  <CountUp
+                    start={80}
+                    end={230}
+                    duration={10}
+                    className="text-gray-300 font-extrabold mr-1"
+                  />
+                  <span className="text-orange-500">+</span>
+                </span>
+                <span className="text-gray-500">Premium Products</span>
+              </div>
+              <div className="flex flex-col items-start mb-5 md:mb-0 md:w-1/3">
+                <span className="text-2xl font-semibold">
+                  <CountUp
+                    start={800}
+                    end={1760}
+                    duration={10}
+                    className="text-gray-300 font-extrabold mr-1"
+                  />
+                  <span className="text-orange-500">+</span>
+                </span>
+                <span className="text-gray-500">Happy Clients</span>
+              </div>
+              <div className="flex flex-col items-start mb-5 md:mb-0 md:w-1/3">
+                <span className="text-2xl font-semibold">
+                  <CountUp
+                    end={12}
+                    duration={10}
+                    className="text-gray-300 font-extrabold mr-1"
+                  />
+                  <span className="text-orange-500">+</span>
+                </span>
+                <span className="text-gray-500">Courses</span>
               </div>
             </div>
 
