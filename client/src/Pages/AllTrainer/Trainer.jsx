@@ -27,13 +27,17 @@ const Trainer = ({ trainer }) => {
             Available
           </h2>
           <div className="mt-4">
-            <p className="flex items-center justify-center gap-2 text-gray-400">
-              <MdWorkHistory className="text-orange-800" />
-              <span>{trainer.Experience} years experience</span>
+            <p className="flex items-center justify-center gap-2 text-gray-500 text-[14px]">
+              <MdWorkHistory className="text-orange-800 f" />
+              <span className="font-semibold">
+                {trainer.Experience} years experience
+              </span>
             </p>
-            <p className="flex items-center justify-center gap-2 text-gray-400">
-              <IoTimeSharp className="text-orange-800" />
-              <span>Available at {trainer.availableTime}</span>
+            <p className="flex items-center justify-center gap-2 text-gray-500 text-[14px]">
+              <IoTimeSharp className="text-orange-800 " />
+              <span className="font-semibold">
+                Available at {trainer.availableTime}
+              </span>
             </p>
           </div>
           <div className="flex justify-center mt-4 space-x-4">
