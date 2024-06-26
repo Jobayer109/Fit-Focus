@@ -19,7 +19,7 @@ const TrainerSection = () => {
             <h1 className="text-4xl font-Prata font-bold text-orange-500">
               Our Trainers
             </h1>
-            <div className="h-2 w-56 mt-1  bg-orange-300 mx-auto blur-lg"></div>
+            <div className="h-2 w-60 mt-1  bg-orange-300 mx-auto blur-lg"></div>
           </div>
           <p className="mt-2 text-slate-400">
             Benefit from custom weight loss plans integrating exercise,

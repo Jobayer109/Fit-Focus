@@ -12,16 +12,16 @@ const Trainer = ({ trainer }) => {
   return (
     <div>
       <div>
-        <div className="mt-10 h-[590px] font-Montserrat relative border border-[#d5dadf] rounded-lg shadow-sm w-[95%]  mx-auto">
+        <div className="mt-10 h-[590px] font-Montserrat border border-[#d5dadf] rounded-lg shadow-sm w-[95%]  mx-auto">
           <div className="">
-            <div className="border-slate-100 bg-[#ffffff] border rounded-xl bg-[#F7F8F8]card card-compact  hover:bg-[#f3f5f3] mb-3 lg:m-0">
-              <figure>
-                <img
-                  className="w-full h-64 rounded-t-2xl mx-auto"
-                  src={trainer.photoURL}
-                  alt="Food image"
-                />
-              </figure>
+            <div className="card card-compact mb-3 lg:m-0">
+              <img
+                src={trainer.photoURL}
+                alt={trainer.photoURL}
+                loading="lazy"
+                className="object-cover rounded-full h-36 w-36 mx-auto border-2 border-orange-500 relative"
+              />
+              {/* md:h-full w-full md:w-[40%] */}
               <div className="card-body mulish-font text-center rounded-lg">
                 <div>
                   {trainer?.skills && trainer?.skills.length > 0 ? (
@@ -41,8 +41,8 @@ const Trainer = ({ trainer }) => {
                     ({trainer.age} years)
                   </span>{" "}
                 </h2>
-                <h2 className=" absolute top-0 left-0 bg-[#E70229] text-white p-2 rounded-2xl">
-                  Slot Available
+                <h2 className=" absolute bg-[#0f9b02] text-white py-[2px] px-[4px] font-semibold rounded-md top-1 right-1">
+                  Available
                 </h2>
                 <div className="flex justify-between">
                   <h1>Experience : {trainer.Experience} years</h1>
