@@ -22,11 +22,12 @@ const ReviewSection = () => {
   });
 
   return (
-    <div className="container mx-auto w-[90%] mb-16">
-      <div className="mt-20 text-center p-1 rounded-xl">
-        <h1 className="my-14 w-[50%] text-4xl mx-auto font-Prata font-bold">
-          Inspiration for your first Booking
+    <div className="container mx-auto w-[90%] mb-16 mt-36">
+      <div className="text-center">
+        <h1 className="text-4xl font-Prata font-bold text-orange-500">
+          What Our Clients Say
         </h1>
+        <div className="h-2 w-96 mt-1  bg-orange-300 mx-auto blur-lg"></div>
       </div>
       <Swiper
         slidesPerView={1}
@@ -63,21 +64,19 @@ const ReviewSection = () => {
       >
         {data?.map((review) => (
           <SwiperSlide key={review._id}>
-            <div className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md dark:divide-gray-300 bg-gray-100 text-gray-800">
+            <div className="container flex flex-col w-full h-72 max-w-lg p-6 mx-auto divide-y rounded-md text-white border-2 border-orange-500 mt-12">
               <div className="flex justify-between p-4">
                 <div className="flex space-x-4">
                   <div>
                     <img
                       src={review.image}
                       alt={review.name}
-                      className="object-cover w-12 h-12 rounded-full dark:bg-gray-500"
+                      className="object-cover w-12 h-12 rounded-full border-2"
                     />
                   </div>
-                  <div>
-                    <h4 className="font-bold">{review.name}</h4>
-                    <span className="text-xs dark:text-gray-600">
-                      2 days ago
-                    </span>
+                  <div className="leading-tight">
+                    <h4 className="font-bold text-gray-200">{review.name}</h4>
+                    <span className="text-xs text-gray-400">2 days ago</span>
                   </div>
                 </div>
                 <div className="flex items-center space-x-2 dark:text-yellow-700">
@@ -91,7 +90,7 @@ const ReviewSection = () => {
                   <span className="text-xl font-bold">{review.rating}</span>
                 </div>
               </div>
-              <div className="p-4 space-y-2 text-sm dark:text-gray-600">
+              <div className="p-4 space-y-2 text-sm text-gray-300">
                 {review.review}
               </div>
             </div>
