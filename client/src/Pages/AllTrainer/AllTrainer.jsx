@@ -5,10 +5,10 @@ const AllTrainer = () => {
   const { data } = useTrainers();
 
   return (
-    <div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 container ">
+    <div className="container mx-auto p-4">
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {data?.map((trainer) => (
-          <Trainer key={trainer._id} trainer={trainer}></Trainer>
+          <Trainer key={trainer._id} trainer={trainer} />
         ))}
       </div>
     </div>

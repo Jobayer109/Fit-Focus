@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Trainer = ({ trainer }) => {
   return (
-    <div className="flex justify-center items-center p-10">
+    <section className="flex justify-center items-center p-10 transform hover:scale-105 transition-transform duration-300 ease-in-out">
       <div className="bg-white border border-gray-300 rounded-lg shadow-lg overflow-hidden w-full max-w-sm">
         <div
           className="p-4 bg-cover bg-center relative"
@@ -25,7 +25,7 @@ const Trainer = ({ trainer }) => {
           </h2>
           {/* <p className="text-gray-600">{trainer.age} years old</p> */}
           <h2 className="mt-2 inline-block bg-green-500 text-white text-sm font-bold px-2 rounded-md">
-            Slot Available
+            Available
           </h2>
           <div className="mt-4">
             <p className="flex items-center justify-center gap-2 text-gray-500">
@@ -51,7 +51,7 @@ const Trainer = ({ trainer }) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
