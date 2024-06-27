@@ -13,7 +13,7 @@ app.use(
     origin: [
       "fitness-tracker-project-a1fbd.web.app",
       "http://localhost:5173",
-      "fitness-tracker-project-a1fbd.firebaseapp.com",
+      // "fitness-tracker-project-a1fbd.firebaseapp.com",
       "https://fit-focus.netlify.app/",
     ],
     credentials: true,
