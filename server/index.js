@@ -11,8 +11,8 @@ const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 app.use(
   cors({
     origin: [
-      "fitness-tracker-project-a1fbd.web.app",
-      "http://localhost:5173",
+      // "fitness-tracker-project-a1fbd.web.app",
+      // "http://localhost:5173",
       // "fitness-tracker-project-a1fbd.firebaseapp.com",
       "https://fit-focus.netlify.app/",
     ],
